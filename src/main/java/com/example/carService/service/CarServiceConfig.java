@@ -33,7 +33,196 @@ public class CarServiceConfig {
                             )
                     )
             );
-            carServiceRepository.saveAll(Arrays.asList(carService1));
+            CarService carService2 = new CarService(
+                    "Marasti",
+                    12,
+                    Arrays.asList(
+                            new Car(
+                                    "BMW",
+                                    "e46",
+                                    "Black",
+                                    1998,
+                                    "CJ46BMW"
+                            ),
+                            new Car(
+                                    "Dacia",
+                                    "Sandero",
+                                    "White",
+                                    2012,
+                                    "CJ12SND"
+                            ),
+                            new Car(
+                                    "Opel",
+                                    "Astra H",
+                                    "Gray",
+                                    2004,
+                                    "BN99QWE"
+                            )
+                    )
+            );
+            CarService carService3 = new CarService(
+                    "Marasti",
+                    12,
+                    Arrays.asList(
+                            new Car(
+                                    "BMW",
+                                    "e46",
+                                    "Black",
+                                    1998,
+                                    "CJ46BMW"
+                            ),
+                            new Car(
+                                    "Dacia",
+                                    "Sandero",
+                                    "White",
+                                    2012,
+                                    "CJ12SND"
+                            ),
+                            new Car(
+                                    "Opel",
+                                    "Astra H",
+                                    "Gray",
+                                    2004,
+                                    "BN99QWE"
+                            )
+                    )
+            );
+            CarService carService4 = new CarService(
+                    "Marasti",
+                    12,
+                    Arrays.asList(
+                            new Car(
+                                    "BMW",
+                                    "e46",
+                                    "Black",
+                                    1998,
+                                    "CJ46BMW"
+                            ),
+                            new Car(
+                                    "Dacia",
+                                    "Sandero",
+                                    "White",
+                                    2012,
+                                    "CJ12SND"
+                            ),
+                            new Car(
+                                    "Opel",
+                                    "Astra H",
+                                    "Gray",
+                                    2004,
+                                    "BN99QWE"
+                            )
+                    )
+            );
+            CarService carService5 = new CarService(
+                    "Marasti",
+                    12,
+                    Arrays.asList(
+                            new Car(
+                                    "BMW",
+                                    "e46",
+                                    "Black",
+                                    1998,
+                                    "CJ46BMW"
+                            ),
+                            new Car(
+                                    "Dacia",
+                                    "Sandero",
+                                    "White",
+                                    2012,
+                                    "CJ12SND"
+                            ),
+                            new Car(
+                                    "Opel",
+                                    "Astra H",
+                                    "Gray",
+                                    2004,
+                                    "BN99QWE"
+                            )
+                    )
+            );
+            CarService carService6 = new CarService(
+                    "Marasti",
+                    12,
+                    Arrays.asList(
+                            new Car(
+                                    "BMW",
+                                    "e46",
+                                    "Black",
+                                    1998,
+                                    "CJ46BMW"
+                            ),
+                            new Car(
+                                    "Dacia",
+                                    "Sandero",
+                                    "White",
+                                    2012,
+                                    "CJ12SND"
+                            ),
+                            new Car(
+                                    "Opel",
+                                    "Astra H",
+                                    "Gray",
+                                    2004,
+                                    "BN99QWE"
+                            )
+                    )
+            );
+            CarService carService7 = new CarService(
+                    "Marasti",
+                    12,
+                    Arrays.asList(
+                            new Car(
+                                    "BMW",
+                                    "e46",
+                                    "Black",
+                                    1998,
+                                    "CJ46BMW"
+                            ),
+                            new Car(
+                                    "Dacia",
+                                    "Sandero",
+                                    "White",
+                                    2012,
+                                    "CJ12SND"
+                            ),
+                            new Car(
+                                    "Opel",
+                                    "Astra H",
+                                    "Gray",
+                                    2004,
+                                    "BN99QWE"
+                            )
+                    )
+            );
+            CarService carService8 = new CarService(
+                    "Marasti",
+                    12,
+                    Arrays.asList(
+                            new Car(
+                                    "BMW",
+                                    "e46",
+                                    "Black",
+                                    1998,
+                                    "CJ46BMW"
+                            ),
+                            new Car(
+                                    "Dacia",
+                                    "Sandero",
+                                    "White",
+                                    2012,
+                                    "CJ12SND"
+                            ),
+                            new Car(
+                                    "Opel",
+                                    "Astra H",
+                                    "Gray",
+                                    2004,
+                                    "BN99QWE"
+                            )
+                    )
+            );
+            carServiceRepository.saveAll(Arrays.asList(carService1, carService2, carService3, carService4, carService5, carService6, carService7, carService8));
         };
     }
 }

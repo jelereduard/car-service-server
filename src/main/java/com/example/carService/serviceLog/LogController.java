@@ -7,6 +7,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path = "/api/log")
+@CrossOrigin(origins = "http://localhost:3000")
 public class LogController {
     private final LogService logService;
 

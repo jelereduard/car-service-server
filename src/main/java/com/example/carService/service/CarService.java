@@ -24,12 +24,15 @@ public class CarService {
     @OneToMany(cascade = CascadeType.ALL)
     private List<Car> cars;
 
+    private int noCars;
+
     public CarService() {}
 
     public CarService(String name, int maxCapacity, List<Car> cars) {
         this.name = name;
         this.maxCapacity = maxCapacity;
         this.cars = cars;
+        setNoCars(cars.size());
     }
 
     public Long getId() {
@@ -62,6 +65,14 @@ public class CarService {
 
     public void setCars(List<Car> cars) {
         this.cars = cars;
+    }
+
+    public int getNoCars() {
+        return noCars;
+    }
+
+    public void setNoCars(int noCars) {
+        this.noCars = noCars;
     }
 
     @Override

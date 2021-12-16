@@ -7,6 +7,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(path = "api/car")
+@CrossOrigin(origins = "http://localhost:3000")
 public class CarController {
     private final CarService carService;
 

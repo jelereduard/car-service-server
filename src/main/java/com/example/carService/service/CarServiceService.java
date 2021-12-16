@@ -34,4 +34,12 @@ public class CarServiceService {
             throw new IllegalStateException("service with id: " + serviceId + " does not exist");
         }
     }
+
+    public CarService getService(Long id) {
+        if(carServiceRepository.existsById(id)) {
+            return carServiceRepository.findById(id).get();
+        } else {
+            throw new IllegalStateException("service with id: " + id + " does not exist");
+        }
+    }
 }
