@@ -47,7 +47,6 @@ public class CarServiceService {
     public void addCarToService(Car car, Long id) {
         if(carServiceRepository.existsById(id)) {
             CarService carService = carServiceRepository.getById(id);
-//            carServiceRepository.deleteFromService(id);
             List<Car> cars = carService.getCars();
             cars.add(car);
             carService.setCars(cars);
