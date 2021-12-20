@@ -1,5 +1,7 @@
 package com.example.carService.car;
 
+import com.example.carService.service.CarService;
+
 import javax.persistence.*;
 
 @Entity
@@ -21,6 +23,9 @@ public class Car {
     private String color;
     private int yearOfFabrication;
     private String plate;
+
+//    @ManyToOne
+//    private CarService carService;
 
 
     public Car() {}

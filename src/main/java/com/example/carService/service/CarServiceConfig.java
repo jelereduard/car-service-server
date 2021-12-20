@@ -219,6 +219,48 @@ public class CarServiceConfig {
                                     "Gray",
                                     2004,
                                     "BN99QWE"
+                            ),
+                            new Car(
+                                    "Fiat",
+                                    "Punto",
+                                    "Blue",
+                                    2002,
+                                    "CJ01FIA"
+                            ),
+                            new Car(
+                                    "Opel",
+                                    "Astra H",
+                                    "brown",
+                                    2004,
+                                    "BN99AWE"
+                            ),
+                            new Car(
+                                    "Opel",
+                                    "Astra",
+                                    "coral",
+                                    2004,
+                                    "IF55QQQ"
+                            ),
+                            new Car(
+                                    "Opel",
+                                    "Cadet",
+                                    "Gray",
+                                    2000,
+                                    "BN99QWE"
+                            ),
+                            new Car(
+                                    "Opel",
+                                    "Astra H",
+                                    "cornflowerblue",
+                                    2004,
+                                    "BN91QWE"
+                            ),
+                            new Car(
+                                    "Opel",
+                                    "Astra ",
+                                    "khaki",
+                                    2004,
+                                    "CJ29QWE"
                             )
                     )
             );

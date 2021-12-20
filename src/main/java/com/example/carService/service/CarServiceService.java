@@ -4,6 +4,7 @@ import com.example.carService.car.Car;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -40,6 +41,38 @@ public class CarServiceService {
             return carServiceRepository.findById(id).get();
         } else {
             throw new IllegalStateException("service with id: " + id + " does not exist");
+        }
+    }
+
+    public void addCarToService(Car car, Long id) {
+        if(carServiceRepository.existsById(id)) {
+            CarService carService = carServiceRepository.getById(id);
+//            carServiceRepository.deleteFromService(id);
+            List<Car> cars = carService.getCars();
+            cars.add(car);
+            carService.setCars(cars);
+            carService.setNoCars(carService.getCars().size());
+            carServiceRepository.save(carService);
+
+        } else {
+            throw new IllegalStateException("service with id: " + id + " does not exist");
+        }
+    }
+
+
+    public void deleteCarFromService(Long serviceId, Long carId) {
+        if(carServiceRepository.existsById(serviceId)) {
+            CarService carService = carServiceRepository.getById(serviceId);
+            List<Car> cars = new ArrayList<>(carService.getCars());
+            cars.forEach(car -> {
+                if(car.getId().equals(carId)) {
+                    carService.getCars().remove(car);
+                }
+            });
+            carService.setNoCars(carService.getCars().size());
+            carServiceRepository.save(carService);
+        } else {
+            throw new IllegalStateException("service with id: " + serviceId + " does not exist");
         }
     }
 }
