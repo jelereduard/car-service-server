@@ -47,6 +47,9 @@ public class CarServiceService {
     public void addCarToService(Car car, Long id) {
         if(carServiceRepository.existsById(id)) {
             CarService carService = carServiceRepository.getById(id);
+            if(carService.getCars().size() >= carService.getMaxCapacity()) {
+                throw new IllegalStateException("Maximum capacity reached");
+            }
             List<Car> cars = carService.getCars();
             cars.add(car);
             carService.setCars(cars);
