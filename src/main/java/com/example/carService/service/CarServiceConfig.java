@@ -61,7 +61,7 @@ public class CarServiceConfig {
                     )
             );
             CarService carService3 = new CarService(
-                    "Marasti",
+                    "Grigorescu",
                     12,
                     Arrays.asList(
                             new Car(
@@ -88,7 +88,7 @@ public class CarServiceConfig {
                     )
             );
             CarService carService4 = new CarService(
-                    "Marasti",
+                    "Gheorgheni",
                     12,
                     Arrays.asList(
                             new Car(
@@ -115,7 +115,7 @@ public class CarServiceConfig {
                     )
             );
             CarService carService5 = new CarService(
-                    "Marasti",
+                    "Europa",
                     12,
                     Arrays.asList(
                             new Car(
@@ -142,7 +142,7 @@ public class CarServiceConfig {
                     )
             );
             CarService carService6 = new CarService(
-                    "Marasti",
+                    "Baciu",
                     12,
                     Arrays.asList(
                             new Car(
@@ -169,7 +169,7 @@ public class CarServiceConfig {
                     )
             );
             CarService carService7 = new CarService(
-                    "Marasti",
+                    "Floresti",
                     12,
                     Arrays.asList(
                             new Car(
@@ -196,7 +196,7 @@ public class CarServiceConfig {
                     )
             );
             CarService carService8 = new CarService(
-                    "Marasti",
+                    "Centru",
                     12,
                     Arrays.asList(
                             new Car(
