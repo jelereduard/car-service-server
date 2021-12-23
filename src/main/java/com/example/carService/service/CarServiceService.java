@@ -2,6 +2,7 @@ package com.example.carService.service;
 
 import com.example.carService.car.Car;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -44,7 +45,7 @@ public class CarServiceService {
         }
     }
 
-    public void addCarToService(Car car, Long id) {
+    public Car addCarToService(Car car, Long id) {
         if(carServiceRepository.existsById(id)) {
             CarService carService = carServiceRepository.getById(id);
             if(carService.getCars().size() >= carService.getMaxCapacity()) {
@@ -55,7 +56,7 @@ public class CarServiceService {
             carService.setCars(cars);
             carService.setNoCars(carService.getCars().size());
             carServiceRepository.save(carService);
-
+            return car;
         } else {
             throw new IllegalStateException("service with id: " + id + " does not exist");
         }
@@ -77,4 +78,17 @@ public class CarServiceService {
             throw new IllegalStateException("service with id: " + serviceId + " does not exist");
         }
     }
+
+//    public Car addCarToFloresti(Car newCar) {
+//            CarService carService = carServiceRepository.getById(serviceId);
+//            List<Car> cars = new ArrayList<>(carService.getCars());
+//            cars.forEach(car -> {
+//                if(car.getId().equals(carId)) {
+//                    carService.getCars().remove(car);
+//                }
+//            });
+//            carService.setNoCars(carService.getCars().size());
+//            carServiceRepository.save(carService);
+//        }
+//    }
 }

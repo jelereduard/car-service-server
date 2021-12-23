@@ -18,8 +18,8 @@ public class CarService {
         return carRepository.findAll();
     }
 
-    public void addNewCar(Car car) {
-        carRepository.save(car);
+    public Car addNewCar(Car car) {
+        return carRepository.save(car);
     }
 
     public void deleteCar(Long carId) {
